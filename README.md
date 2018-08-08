@@ -12,8 +12,9 @@ If your Pi doesn't have OpenCV and Movidius API installed
 
 After that,
 
-1) git clone https://github.com/chinthysl/EgdeHeadCounting
-2) run python3 ncs_video_Count.py --graph graphs/GRAPH --display DISPLAY --confidence CONFIDENTNUM --save SAVEVIDEO
+1) git clone https://github.com/chinthysl/EgdeHeadCounting.git
+2) run python3 ncs_video_count.py --video TestVideos/VIDEOFILE --graph graphs/GRAPH --display DISPLAY --confidence CONFIDENTNUM --save SAVEVIDEO
+    *VIDEOFILE = video file you want to do the detection inside TestVideos location
     *GRAPH = graph file you compiled from mvNCCompiler, exists examples in graphs path
     *DISPLAY = 0 if not display detection relatime, 1 to display, will reduce FPS (default = 0.5)
     *CONFIDENTNUM = 0.0 - 1.0 (default = 0.5)
