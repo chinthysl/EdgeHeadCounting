@@ -1,5 +1,5 @@
 # USAGE
-# python ncs_realtime_objectdetection.py --graph Graphs/graphycroom30000 --rotation 0 --display 1 --confidence 0.5 --save 1
+# python3 ncs_realtime_objectdetection.py --graph Graphs/graphycroom30000 --rotation 0 --display 1 --confidence 0.5 --save 1
 
 # import the necessary packages
 from itertools import count

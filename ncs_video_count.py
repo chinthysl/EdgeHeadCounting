@@ -1,5 +1,5 @@
 # USAGE
-# python ncs_video_count.py --video TestVideos/room1.avi --graph Graphs/graphycroom30000 --display 1 --confidence 0.5 --save 1
+# python3 ncs_video_count.py --video TestVideos/room1.avi --graph Graphs/graphycroom30000 --display 1 --confidence 0.5 --save 1
 
 # import the necessary packages
 from itertools import count
@@ -179,8 +179,8 @@ cv2.imwrite('DataGather/firstFrame_line.jpg', firstFrame)
 
 if args["save"] > 0:
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
-    out = cv2.VideoWriter('DetectionVideos/{}Detections_{}.avi'.format(splitext(basename(args["video"]))[0], 
-                         splitext(basename(args["graph"]))[0]), fourcc, 5, DISPLAY_DIMS)
+    out = cv2.VideoWriter('DetectionVideos/{}Detections_{}_{}.avi'.format(splitext(basename(args["video"]))[0], 
+                         splitext(basename(args["graph"]))[0], time.strftime("%Y%m%d-%H%M%S")), fourcc, 5, DISPLAY_DIMS)
 
 fps = FPS().start()
 
