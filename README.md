@@ -1,4 +1,4 @@
-# EgdeHeadCounting
+# EdgeHeadCounting
 
 This repo contains the source code to run the head counting program on a rasberry pi with Intels NCS setup.
 You can find the current detection and object counting state of the project looking at the two videos provided.
@@ -12,7 +12,7 @@ If your Pi doesn't have OpenCV and Movidius API installed
 
 After that,
 
-1) git clone https://github.com/chinthysl/EgdeHeadCounting.git
+1) git clone https://github.com/chinthysl/EdgeHeadCounting.git
 2) run python3 ncs_video_count.py --video TestVideos/VIDEOFILE --graph graphs/GRAPH --display DISPLAY --confidence CONFIDENTNUM --save SAVEVIDEO
     *VIDEOFILE = video file you want to do the detection inside TestVideos location
     *GRAPH = graph file you compiled from mvNCCompiler, exists examples in graphs path
